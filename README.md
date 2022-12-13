@@ -21,19 +21,24 @@
 ## deploy contract:
 
 `npx hardhat run scripts/deployABToken1.js --network goerli`
+
 `npx hardhat run scripts/deployABToken2.js --network goerli`
 
 
 
 ## verify contract:
 `npx hardhat compile --force`
+
 `npx hardhat verify --contract contracts/ABToken1.sol:ABToken1  0x516538D612a292C55042F340186ffF4AF3bDeba3 --network goerli`
+
 `npx hardhat verify --contract contracts/ABToken2.sol:ABToken2  0x6fa292Ac5f300c84e007873bBaa052570b5390C4 --network goerli`
 
 `npx hardhat verify --network goerli 0x516538D612a292C55042F340186ffF4AF3bDeba3`
+
 `npx hardhat verify --network goerli 0x6fa292Ac5f300c84e007873bBaa052570b5390C4`
 
 - AB Token 1 is deployed at:  0x516538D612a292C55042F340186ffF4AF3bDeba3
+
 - AB Token 2 is deployed at:  0x6fa292Ac5f300c84e007873bBaa052570b5390C4
 
 
